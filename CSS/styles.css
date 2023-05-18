@@ -88,18 +88,31 @@ header{
     margin-left: 100px;
     margin-top: 50px;
 }*/
+.card-mayor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media (min-width: 768px){
+    .card-mayor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-mayor{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 .margen{
     margin-left: 5rem;
 }
-/*.card{
-    border: solid;
-    background-color: gray;
-}
-
-.card p a{
-    text-decoration: none;
-    color: blue;
-}*/
 
 section div img{
     height: 400px;
