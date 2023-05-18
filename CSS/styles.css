@@ -71,7 +71,16 @@ header{
     text-decoration: none;
     color: blue;
 }
+.row{
+    gap: 50px
+}
 
+.card{
+    background-color:darkolivegreen;
+}
+.card img{
+    padding: 10px;
+}
 /*.promo{
     display: flex;
     flex-direction: row;
