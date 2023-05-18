@@ -67,7 +67,6 @@ header{
 .presentacion p{
     font-size: 20px;
 }
-
 .presentacion p a{
     text-decoration: none;
     color: blue;
@@ -120,39 +119,6 @@ section div img{
     background-color: gray;
 }
 
-.logo-wsp{
-    width: 60px;
-    bottom: 0;
-    right: 40px;
-}
-
-.logo-ig{
-    width: 60px;
-    bottom: 0;
-    right: 40px;
-    margin-left: 60px;
-}
-
-.logo-mail{
-    width: 60px;
-    bottom: 0;
-    right: 40px;
-    margin-left: 60px;
-}
-
-.logo-cv{
-    width: 60px;
-    bottom: 0;
-    right: 40px;
-    margin-left: 60px;
-}
-
-footer{
-    font-size: 25px;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-}
 
 .card4{
     width: 400px;
@@ -230,3 +196,34 @@ footer{
 #comentario{
     margin-left: 0px;
 }
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top: 30px;
+}
+
+.logos{
+    width: 40px;
+    height: 30px;
+}
+
+@media(min-width: 768px){
+    .redes{
+        flex-direction: column;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+    }
+
+    .titulo_redes{
+        display: none;
+    }
+}
+footer{
+    margin-top: 10px;
+    background-color: white;
+    padding: 30px;
+}
+
