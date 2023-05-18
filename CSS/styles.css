@@ -81,13 +81,7 @@ header{
 .card img{
     padding: 10px;
 }
-/*.promo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-top: 50px;
-}*/
+
 .card-mayor{
     display: flex;
     flex-direction: column;
@@ -117,85 +111,6 @@ header{
 section div img{
     height: 400px;
     width: 400px;
-}
-
-.card2 p a{
-    text-decoration: none;
-    color: blue;
-}
-
-.card2{
-    margin-right: 0px;
-    width: 400px;
-    height: 450px;
-    border: solid;
-    background-color: gray;
-}
-
-.card3{
-    margin-right: 100px;
-    margin-left: 0px;
-    width: 400px;
-    height: 450px;
-    border: solid;
-    background-color: gray;
-}
-
-
-.card4{
-    width: 400px;
-    height: 460px;
-    border: solid;
-    background-color: gray;
-    text-align: center;
-}
-
-.card5{
-    margin-right: 100px;
-    margin-left: 0px;
-    width: 400px;
-    height: 460px;
-    border: solid;
-    background-color: gray;
-    text-align: center;
-}
-
-.card6{
-    margin-right: 100px;
-    margin-left: -100px;
-    width: 400px;
-    height: 460px;
-    border: solid;
-    background-color: gray;
-    text-align: center;
-}
-
-.card7{
-        width: 400px;
-        height: 460px;
-        border: solid;
-        background-color: gray;
-        text-align: center;
-}
-
-.card8{
-    margin-right: 100px;
-    margin-left: 0px;
-    width: 400px;
-    height: 460px;
-    border: solid;
-    background-color: gray;
-    text-align: center;
-}
-
-.card9{
-    margin-right: 100px;
-    margin-left: -100px;
-    width: 400px;
-    height: 460px;
-    border: solid;
-    background-color: gray;
-    text-align: center;
 }
 
 .preguntas{
