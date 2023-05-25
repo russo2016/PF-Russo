@@ -171,8 +171,7 @@ footer{
 }
 
 .btn:hover{
-    --bs-btn-padding-x: 1rem;
-    --bs-btn-padding-y: 0.6rem;
+    transform: scale(1.1);
 }
 
 .form{
