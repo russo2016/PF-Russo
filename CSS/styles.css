@@ -167,6 +167,7 @@ footer{
 
 .btn{
     transition: all 1s;
+    cursor: pointer;
 }
 
 .btn:hover{
