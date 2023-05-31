@@ -1,7 +1,8 @@
-.card{
-    transition: all 1s;
-}
-@media (min-widht:768px){
+@media (min-width: 768px){
+    .card{
+        transition: all 1s;
+    }
+
     .card:hover{
         transform: scale(1.1);
     }

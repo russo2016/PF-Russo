@@ -1,9 +1,8 @@
 @charset "UTF-8";
-.card {
-  transition: all 1s;
-}
-
-@media (min-widht: 768px) {
+@media (min-width: 768px) {
+  .card {
+    transition: all 1s;
+  }
   .card:hover {
     transform: scale(1.1);
   }
@@ -40,11 +39,10 @@
   width: 300px;
 }
 
-.preguntas {
-  transition: all 1s;
-}
-
-@media (min-widht: 768px) {
+@media (min-width: 768px) {
+  .preguntas {
+    transition: all 1s;
+  }
   .preguntas:hover {
     transform: scale(1.1);
   }
