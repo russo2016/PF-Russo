@@ -1,0 +1,21 @@
+$espaciado: 50px;
+
+@mixin alinear-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $espaciado - 10px;
+}
+
+@mixin alinear-cards-tablet{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: $espaciado - 20px;
+}
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}

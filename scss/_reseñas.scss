@@ -1,0 +1,15 @@
+.boton{
+    @extend .btn;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.inputs{
+    width: 200px;
+    transition: width 2s;
+}
+
+.inputs:focus{
+    width: 300px;
+}

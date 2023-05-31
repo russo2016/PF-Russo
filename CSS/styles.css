@@ -1,184 +1,222 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+.card {
+  transition: all 1s;
 }
 
-body{
-    background-color: #acad94;
-    font-family: sans-serif;
-    margin: 0;
+.card:hover {
+  transform: scale(1.1);
 }
 
-nav a{
-    color: black;
-    padding-right: 100px;
-    font-weight: 700;
-    text-decoration: none;
+.redes {
+  transform: all 1s;
 }
 
-header{
-    display: flex;
-    height: 100px;
-    background-color: coral;
-    justify-content: space-between;
-    align-items: center;
+.redes:hover {
+  transform: scale(1.1);
 }
 
-.logo{
-    display: flex;
-    align-items: center;
+.btn, .boton {
+  transition: all 1s;
+  cursor: pointer;
 }
 
-.logo img{
-    height: 100px;
+.btn:active, .boton:active {
+  transform: scale(0.8);
 }
 
-.logo h2{
-    font-size: 40px;
-    position: absolute;
-    bottom: 864px;
-    left: 112px;
+.boton {
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.menu{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+.inputs {
+  width: 200px;
+  transition: width 2s;
 }
 
-.eslogan{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 10px;
+.inputs:focus {
+  width: 300px;
 }
 
-.presentacion{
-    display: block;
-    text-align: center;
-    margin-left: 400px;
-    margin-right: 400px;
+.preguntas {
+  transition: all 1s;
 }
 
-.presentacion h2{
-    font-size: 40px;
+.preguntas:hover {
+  transform: scale(1.1);
 }
 
-.presentacion p{
-    font-size: 20px;
-}
-.presentacion p a{
-    text-decoration: none;
-    color: blue;
-}
-.row{
-    gap: 80px
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.card{
-    background-color:darkolivegreen;
-}
-.card img{
-    padding: 10px;
-}
-
-.card-mayor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+body {
+  background-color: #acad94;
+  font-family: sans-serif;
+  margin: 0;
 }
 
-@media (min-width: 768px){
-    .card-mayor{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        gap: 30px;
-    }
+nav a {
+  color: black;
+  padding-right: 100px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  background-color: coral;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.logo h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: 864px;
+  left: 112px;
+}
+
+.eslogan {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.presentacion {
+  display: block;
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.presentacion h2 {
+  font-size: 40px;
+}
+
+.presentacion p {
+  font-size: 20px;
+}
+
+.presentacion p a {
+  text-decoration: none;
+  color: blue;
+}
+
+.row {
+  gap: 20px;
+}
+
+.card {
+  background-color: darkolivegreen;
+}
+
+.card img {
+  padding: 10px;
+}
+
+.card-mayor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .card-mayor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
 }
 @media (min-width: 768px) {
-    .card-promocion{
-        margin-left: 15px;
-    }
+  .card-promocion {
+    margin-left: 15px;
+  }
 }
-
 @media (min-width: 992px) {
-    .card-mayor{
-        grid-template-columns: repeat(3,1fr);
-    }
+  .card-mayor {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.margen{
-    margin-left: 5rem;
-}
-
-section div img{
-    height: 400px;
-    width: 400px;
+.margen {
+  margin-left: 5rem;
 }
 
-.preguntas{
-    margin-top: 50px;
-    font-size: 24px;
-    text-align: center;
-    border: double;
-    border-color: black;
-    background-color: darkolivegreen;
+section div img {
+  width: 400px;
+  height: 400px;
 }
 
-.reseña{
-    margin-top: 20px;
-    margin-left: 20px;
+.preguntas {
+  margin-top: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: double;
+  border-color: black;
+  background-color: darkolivegreen;
 }
 
-.reseña p{
-    margin-bottom: 20px;
+.reseña {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-#comentario{
-    margin-left: 0px;
+.reseña p {
+  margin-bottom: 20px;
 }
 
-.redes{
-    display: flex;
-    justify-content: center;
-    gap:20px;
-    margin-top: 30px;
+#comentario {
+  margin-left: 0px;
 }
 
-.logos{
-    width: 40px;
-    height: 30px;
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-@media(min-width: 768px){
-    .redes{
-        flex-direction: column;
-        position: fixed;
-        top: 40%;
-        right: 2%;
-    }
-
-    .titulo_redes{
-        display: none;
-    }
-}
-footer{
-    margin-top: 10px;
-    background-color: white;
-    padding: 30px;
+.logos {
+  width: 40px;
+  height: 30px;
 }
 
-.btn{
-    transition: all 1s;
-    cursor: pointer;
+@media (min-width: 768px) {
+  .redes {
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+  }
+  .titulo_redes {
+    display: none;
+  }
+}
+footer {
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.form {
+  margin-bottom: 20px;
 }
 
-.form{
-    margin-bottom: 20px;
-}
+/*# sourceMappingURL=styles.css.map */

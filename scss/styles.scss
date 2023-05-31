@@ -1,0 +1,167 @@
+@import "variables";
+@import "inicio";
+@import "hombre-mujer";
+@import "reseñas";
+@import "preguntas";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #acad94;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav a{
+    color: black;
+    padding-right: 100px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.logo h2{
+    font-size: 40px;
+    position: absolute;
+    bottom: 864px;
+    left: 112px;
+}
+
+.eslogan{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.presentacion{
+    display: block;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.presentacion h2{
+    font-size: 40px;
+}
+
+.presentacion p{
+    font-size: 20px;
+}
+.presentacion p a{
+    text-decoration: none;
+    color: blue;
+}
+.row{
+    gap: $espaciado - 30px;
+}
+
+.card{
+    background-color:darkolivegreen;
+}
+.card img{
+    padding: 10px;
+}
+
+.card-mayor{
+    @include alinear-cards;
+}
+
+@media (min-width: 768px){
+    .card-mayor{
+        @include alinear-cards-tablet;
+    }
+}
+@media (min-width: 768px) {
+    .card-promocion{
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-mayor{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.margen{
+    margin-left: 5rem;
+}
+
+section div img{
+    @include sizes(400px,400px)
+}
+
+.preguntas{
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: double;
+    border-color: black;
+    background-color: darkolivegreen;
+}
+
+.reseña{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.reseña p{
+    margin-bottom: 20px;
+}
+
+#comentario{
+    margin-left: 0px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: $espaciado - 30px;
+    margin-top: 30px;
+}
+
+.logos{
+    @include sizes(40px,30px)
+}
+
+@media(min-width: 768px){
+    .redes{
+        flex-direction: column;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+    }
+
+    .titulo_redes{
+        display: none;
+    }
+}
+footer{
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+}
+
+.form{
+    margin-bottom: 20px;
+}
