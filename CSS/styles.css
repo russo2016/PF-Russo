@@ -3,10 +3,11 @@
   transition: all 1s;
 }
 
-.card:hover {
-  transform: scale(1.1);
+@media (min-widht: 768px) {
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
-
 .redes {
   transform: all 1s;
 }
@@ -43,10 +44,11 @@
   transition: all 1s;
 }
 
-.preguntas:hover {
-  transform: scale(1.1);
+@media (min-widht: 768px) {
+  .preguntas:hover {
+    transform: scale(1.1);
+  }
 }
-
 * {
   margin: 0;
   padding: 0;

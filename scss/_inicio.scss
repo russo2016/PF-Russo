@@ -1,9 +1,10 @@
 .card{
     transition: all 1s;
 }
-
-.card:hover{
-    transform: scale(1.1);
+@media (min-widht:768px){
+    .card:hover{
+        transform: scale(1.1);
+    }
 }
 
 .redes{
