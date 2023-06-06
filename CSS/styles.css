@@ -77,10 +77,11 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  height: 90px;
 }
 
 .logo img {
-  height: 100px;
+  height: 105px;
 }
 
 .logo h2 {
